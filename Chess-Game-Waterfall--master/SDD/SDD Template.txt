@@ -1,0 +1,82 @@
+
+Software Design
+Document
+for
+Chess Game
+Version 1.0 approved
+Prepared by Snake Army
+Texas State University
+02/04/18
+
+ 
+1.a  Contents					ii
+1 INTRODUCTION					1
+1.1 PURPOSE					1
+1.2 SYSTEM OVERVIEW				1
+1.3 DEFINITIONS, ACRONYMS AND ABBREVIATIONS	1
+1.4 SUPPORTING MATERIALS			1
+1.5 DOCUMENT OVERVIEW				1
+2 ARCHITECTURE					2
+2.1 OVERVIEW					2
+2.2 COMPONENT 1..N				2
+3 HIGH-LEVEL DESIGN				3
+4 LOW-LEVEL DESIGN				4
+4.1 MODULES OVERVIEW				4
+4.2 MODULE SPECIFICATIONS			4
+4.2.1 Module X1					4
+4.2.2 Module X2					5
+APPENDIX A – GROUP LOG				6
+
+1.a	Contents
+
+<This template serves as a basis for a Software Design Specification.  As in the SRS document, all italics refer to the “comment” style. Comments in blue are general and apply to any SDS, these that are in black are applicable specifically for this course. This template is based on the work by Karl. E Wiegers, Steve McConnel of CXOne group and the IEEE standards.>
+ 
+1. 	Introduction
+
+1.1 	Purpose
+
+1.2	System Overview
+	<Brief high-level description of system structure, functionality, interactions with external systems, system issues, etc.
+
+1.3	Definitions, Acronyms and Abbreviations
+	* Check - The team threatening the King is under check, and must therefore defend the king in that turn.
+	* Checkmate - The team that conquered the opposing King has won the game.
+	* Pawn - The lowest value piece in a chess game that can move one square forward (or two on its first move) and can only                          caputrue another piece when moving one square diagonally. Each player starts with eight pawns on the second rank
+                 of the board from each players perspective. If a pawn reaches the opponent's end of the board it can be promoted
+                 to any other piece. 
+	* Rook - Each player starts the game with two rooks. White having them start on squares a1 and h1, and black having them start                    on squares a8 and h8. The rook can only move horizontally or vertically accross the chess board. It can also preform
+                 a special move with the king if certain conditions are met.  
+	* Knight - Each player starts the game with two knights. White having them start on squares b1 and g1, and black having them                        start on squares b8 and g8. It moves to a square that is two squares away horizontally and one square vertically,
+                   or two squares vertically and one square horizontally, making an L shaped movement. They also have the ability 
+                   to jump over pieces of either color to reach its destination. 
+	* Bishop - Each player starts the game with two bishops. White having them start on squares c1 and f1, and black having them                        start on squares c8 and f8. The bishop can only move diagonally accross the chess board.
+	* Queen - Each player starts the game with only one queen. White having it start on square d1 and black having it start on                         square d8. The queen has the ability to move horizontally, vertically, and diagonally any number of squares.  
+	* King -  The king is the most important piece in the game, having the king be in checkmate loses the game for the owner of the                   king. Each player only has one of this piece, white having it start on e1 and black having it start on e8. The king 
+                  can only move one space horizontally, diagonally, or vertically. The king cannot move into a possition that would
+                  cause it to be in check. The king also has a special interaction with the rook called castling. 
+	* Castling - Castling consists of moving the king two squares towards a rook on the player's first rank, then moving the rook to 		      the square over which the king crossed.[2] Castling may only be done if the king has never moved, the rook 			     involved has never moved, the squares between the king and the rook involved are unoccupied, the king is not in 			     check, and the king does not cross over or end on a square in which it would be in check. [Wikipedia reference]
+	< List any project definitions and acronyms introduced to the project by this design. 
+
+1.4	Supporting Materials.
+	https://en.wikipedia.org/wiki/Castling
+	<Note any references or related materials here.
+
+1.5	Document Overview
+
+2 Architecture
+	<The architecture provides the top level design view of a system and provides a basis for more detailed design work. This is the 	 section where you should include your High-Level design Component Diagram.
+
+2.1 	Overview
+	<This section provides a high level overview of the structural and functional decomposition of the system. Focus on how and why 	the system was decomposed in a particular way rather than on details of the particular components. Include information on the 		major responsibilities and roles that the system (or portions of it) must play.
+2.2 	Component 1..n
+	<Describe an element (subsystem, component, etc...) from architecture in further detail. When appropriate, include information 		on how the element is further broken down and the interactions and relationships between these subcomponents.
+
+3. 	High-Level Design
+	<This section describes in further detail elements discussed in the Architecture. Normally this section would be split into 		separate documents for different areas of the design. 
+	High-level designs are most effective if they attempt to model groups of system elements from a number of different views.
+	3.1 View / Model Component 1..n
+	<Provide a description and diagrams of a system component or set of components that describes a clearly defined view or model of 	 the entire system or a subset of the system.>
+	
+4.	Low-Level Design
+
+
